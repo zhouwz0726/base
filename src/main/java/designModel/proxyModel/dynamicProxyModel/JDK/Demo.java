@@ -7,7 +7,7 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 
 /**
- * 动态代理
+ * JDK动态代理
  * */
 public class Demo {
 

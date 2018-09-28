@@ -6,10 +6,11 @@
 
 动态代理
     JDK
-        动态代理中的代理类需要实现invocationHandler接口，并重写invoke方法，这里用到了反射机制
+        动态代理中的代理类需要实现invocationHandler接口，并覆盖invoke方法，这里用到了反射机制
         代理类在运行的时候动态生成的，很方便的对代理类的函数进行统一的处理，而不用修改每个代理类中的方法
         比如说每个代理的方法前加上一个处理方法（before，after）,Aop在before切入一个事务,
         在after上根据方法执行的情况决定是回滚还是提交
 
     CJlib
-
+        Cjlib代理，无序实现接口，代理类需要实现MethodInterceptor接口
+        CGlib动态代理是通过继承业务类，生成的动态代理类是业务类的子类，通过重写业务方法进行代理；
