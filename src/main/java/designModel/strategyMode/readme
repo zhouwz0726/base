@@ -1,6 +1,9 @@
 
     策略模式
-        定义一系列算法并且封装起来，可以相互替换
+        意图:定义一系列算法并且封装起来，可以相互替换
+        主要解决:在多种算法相似的情况下，使用if...else...所带来的复杂和难以维护
         示例：
-            1：定义一个strategy接口，里面有一个doOperation方法
-            2：定义实体类去实现该接口并重写该方法
+            1:定义一个strategy接口，里面有一个doOperation方法
+            2:定义实体类去实现该接口并重写该方法(OpreationAdd,OperationSubstract)
+            3:定义实体类Context，封装
+            4:通过Context来查看当它改变策略Strategy时的行为变化
