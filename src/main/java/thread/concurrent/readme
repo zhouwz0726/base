@@ -1,0 +1,11 @@
+
+
+        concurrent包常用的类
+        一:blockingQueue,阻塞队列；
+            1:使用场景:通常用于一批线程生产对象后往队列里放，一批线程取出队列对象后消费;
+            2:blockingQueue是一个接口，实现该接口的有
+                .ArrayBlockingQueue(数组阻塞队列)
+                .DelayQueue
+                .LinkedBlockingQueue
+                .priorityBlockingQueue
+                .synchronousQueue
