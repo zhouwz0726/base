@@ -17,7 +17,6 @@ public class semaphoreDemo extends Thread {
 
     private static final Semaphore semaphore = new Semaphore(3,true);
 
-
         private String name ;
 
         public semaphoreDemo (String name){
