@@ -1,8 +1,6 @@
 package thread.concurrent;
 
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.Semaphore;
 
 /**
@@ -13,13 +11,13 @@ import java.util.concurrent.Semaphore;
  * 如果你想要强制公平，Semaphore 类有一个具有一个布尔类型的参数的构造子，通过这个参数以告知 Semaphore 是否要强制公平。强制公平会影响到并发性能，所以除非你确实需要它否则不要启用它。
  * @author zhouwz
  * */
-public class semaphoreDemo extends Thread {
+public class SemaphoreDemo extends Thread {
 
     private static final Semaphore semaphore = new Semaphore(3,true);
 
         private String name ;
 
-        public semaphoreDemo (String name){
+        public SemaphoreDemo(String name){
             this.name = name;
         }
 
@@ -40,7 +38,7 @@ public class semaphoreDemo extends Thread {
     public static void main(String[] args) {
         String nameArr[] = {"张三","李四","王五","周六","戚七","陶八",};
         for (String n:nameArr) {
-            Thread thread  = new semaphoreDemo(n);
+            Thread thread  = new SemaphoreDemo(n);
             thread.start();
         }
     }
