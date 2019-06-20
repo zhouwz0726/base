@@ -1,0 +1,14 @@
+
+
+    @ControllerAdvice：大体意思是控制值增强，和exception异常分类配合使用
+            @ControllerAdvice是一个@Componet,用于定义@ExceptionHandler,@InitBinder和@ModelAttribute方法，适用于所有的@RequestMap方法
+
+    例子：
+        1:类IndexController的testError方法
+            testError方法中抛出一个异常
+        2：CustomException，自己封装的异常类
+            CustomException接收抛出的异常
+        3：MyExceptionHandler：全局异常处理类
+            customExceptionHandler方法捕获异常信息，并进行相关操作
+
+            addAttribute方法，可以在进入requestMapping方法之前，进行值注入，放到model对象里面
