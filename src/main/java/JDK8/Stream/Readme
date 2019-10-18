@@ -1,0 +1,17 @@
+
+
+        1：Stream：java8引入的新特性，他可以将集合转化成流，从而对集合内的元素进行操作，比如说筛选，排序，聚合等操作
+        2：如何生成流？
+            a:stream()方法，直接List.stream();
+            b:parallelStream(),该方法主要用于并行流方法，能够让数据集合并行操作
+        3：常用API
+            .stream.map():通俗说就是将流中的每一个元素T映射为R(类似类型转换)
+            .stream.filter():用于设置条件，过滤流中的元素
+            .stream.reduce():reduce方法,用于组合流中的元素，如求和，求最大值，求积；
+                            三个方法。第一个方法一个参数，求和求积
+                                    第二个方法二个参数，初始化值+求和求积
+                                    第三个方法三个参数，返回的对象类型，初始化值+求和求积+并行下合并结果
+            .stream.anyMatch():anyMatch方法，流中是否有一个元素匹配给定的条件,返回boolean
+            .stream.sorted():用于对流中的元素进行排序，若元素已经实现了Comparable接口, 可以直接调用
+            .stream.limit(n):limit方法，参数为n，返回前n个元素
+            .stream.skip(n):skip方法，参数为n，去除前n个元素
