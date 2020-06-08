@@ -4,6 +4,7 @@
             @ControllerAdvice是一个@Componet,用于定义@ExceptionHandler,@InitBinder和@ModelAttribute方法，适用于所有的@RequestMap方法
 
     例子：
+    顺序：IndexController类的testError方法抛出一个异常===>CustomException类接收===>MyExceptionHandler类的customExceptionHandler方法捕获到，其主要功能是@ExceptionHandler
         1:类IndexController的testError方法
             testError方法中抛出一个异常
         2：CustomException，自己封装的异常类
