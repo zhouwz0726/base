@@ -1,6 +1,4 @@
-package thread.Thread.ClassLockAndObjectLock;
-
-import sun.tools.tree.NewArrayExpression;
+package base.thread.Thread.ClassLockAndObjectLock;
 
 /**
  * 以下方法为了做测试，不考虑代码复用美观因素

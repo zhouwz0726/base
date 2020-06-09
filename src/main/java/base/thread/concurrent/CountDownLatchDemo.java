@@ -1,6 +1,4 @@
-package thread.concurrent;
-
-import com.sun.deploy.util.Waiter;
+package base.thread.concurrent;
 
 import java.util.concurrent.CountDownLatch;
 
