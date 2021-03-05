@@ -1,4 +1,4 @@
-package JDK8.Stream;
+package base.JDK8.Stream;
 
 public class Person {
 

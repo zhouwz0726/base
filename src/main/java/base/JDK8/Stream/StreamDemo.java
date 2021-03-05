@@ -1,7 +1,6 @@
-package JDK8.Stream;
+package base.JDK8.Stream;
 
 import java.util.*;
-import java.util.function.Consumer;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.joining;

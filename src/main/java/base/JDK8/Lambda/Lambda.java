@@ -1,4 +1,4 @@
-package JDK8.Lambda;
+package base.JDK8.Lambda;
 
 import java.util.function.Supplier;
 
